@@ -28,6 +28,8 @@ Pewlett Hackard is a large company who is looking to navigate the waters where e
 
 ![Mentorship Eligibility](https://github.com/Jeffstr00/Pewlett-Hackard-Analysis/blob/main/resources/mentorship_eligibility.png)
 
+* In order to be ready to fill the upcoming void that will be created by the retiring baby boomers, we decided to look for current employees who would be good candidates for the mentorship program so that they will be prepared to take over the new resposibilities.  To do so, we looked at employees who are about 10-15 years away from retirement, figuring that they would be experienced enough to move into the senior positions that are about to be vacated without being too close to retirement themselves.  To select these people, we used `WHERE (de.to_date = '9999-01-01') AND (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')` when creating the table.
+
 ## Summary
 
 XXX Provide high-level responses to the following questions, then provide two additional queries or tables that may provide more insight into the upcoming "silver tsunami."
