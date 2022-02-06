@@ -12,7 +12,7 @@ XXX Provide a bulleted list with four major points from the two analysis deliver
 
 * Our first attempt at working with the data saw us collecting employee numbers, names, titles, and employment dates from the Employees and Titles CSVs.  While this included all of the information we needed (and then some), it wasn't particularly useful as it contained multiple entries for each person if they held multiple positions throughout their time with the company.  Maybe it could be useful if someone wanted to go back and see every department that soon-to-be retirees worked in, but for the most part, we needed something more practical to work with.
 
-![Unique Titles](https://github.com/Jeffstr00/Movies_ETL/blob/main/Resources/unique_titles.png)
+![Unique Titles](https://github.com/Jeffstr00/Pewlett-Hackard-Analysis/blob/main/Resources/unique_titles.png)
 
 * In order to refine our information so that we only had one entry for each person (representing their current position in the company), we used `SELECT DISTINCT ON (emp_no) emp_no ... ORDER BY emp_no, to_date DESC` when creating our Unique Titles table.  This leaves us with much more useful information as we have a list of who is expected to retire soon and what position they currently hold (in other words, what position the company needs to be prepared to fill).
 
